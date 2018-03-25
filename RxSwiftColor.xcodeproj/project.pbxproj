@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0379673A29866E8443D7A26A /* Pods_RxSwiftColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C859666ED5D2D2C70EDB31D /* Pods_RxSwiftColor.framework */; };
 		DA251BAB20674D3400C7F5EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA251BAA20674D3400C7F5EA /* AppDelegate.swift */; };
-		DA251BAD20674D3400C7F5EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA251BAC20674D3400C7F5EA /* ViewController.swift */; };
+		DA251BAD20674D3400C7F5EA /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA251BAC20674D3400C7F5EA /* ColorViewController.swift */; };
 		DA251BB020674D3400C7F5EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA251BAE20674D3400C7F5EA /* Main.storyboard */; };
 		DA251BB220674D3400C7F5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA251BB120674D3400C7F5EA /* Assets.xcassets */; };
 		DA251BB520674D3400C7F5EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA251BB320674D3400C7F5EA /* LaunchScreen.storyboard */; };
+		DA251BBD20674DA500C7F5EA /* SelectedColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA251BBC20674DA500C7F5EA /* SelectedColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C37768B5031F11D19574880 /* Pods-RxSwiftColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftColor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftColor/Pods-RxSwiftColor.debug.xcconfig"; sourceTree = "<group>"; };
+		732C5E07A0BD34EF522E47D1 /* Pods-RxSwiftColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftColor.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftColor/Pods-RxSwiftColor.release.xcconfig"; sourceTree = "<group>"; };
+		9C859666ED5D2D2C70EDB31D /* Pods_RxSwiftColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA251BA720674D3400C7F5EA /* RxSwiftColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA251BAA20674D3400C7F5EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA251BAC20674D3400C7F5EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA251BAC20674D3400C7F5EA /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		DA251BAF20674D3400C7F5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA251BB120674D3400C7F5EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA251BB420674D3400C7F5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA251BB620674D3400C7F5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA251BBC20674DA500C7F5EA /* SelectedColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0379673A29866E8443D7A26A /* Pods_RxSwiftColor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B90061F9AF93887F71A858B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C859666ED5D2D2C70EDB31D /* Pods_RxSwiftColor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC9B0B3C0305F30500AE6399 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C37768B5031F11D19574880 /* Pods-RxSwiftColor.debug.xcconfig */,
+				732C5E07A0BD34EF522E47D1 /* Pods-RxSwiftColor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA251B9E20674D3400C7F5EA = {
 			isa = PBXGroup;
 			children = (
 				DA251BA920674D3400C7F5EA /* RxSwiftColor */,
 				DA251BA820674D3400C7F5EA /* Products */,
+				AC9B0B3C0305F30500AE6399 /* Pods */,
+				8B90061F9AF93887F71A858B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				DA251BAA20674D3400C7F5EA /* AppDelegate.swift */,
-				DA251BAC20674D3400C7F5EA /* ViewController.swift */,
+				DA251BAC20674D3400C7F5EA /* ColorViewController.swift */,
 				DA251BAE20674D3400C7F5EA /* Main.storyboard */,
 				DA251BB120674D3400C7F5EA /* Assets.xcassets */,
 				DA251BB320674D3400C7F5EA /* LaunchScreen.storyboard */,
 				DA251BB620674D3400C7F5EA /* Info.plist */,
+				DA251BBC20674DA500C7F5EA /* SelectedColorViewController.swift */,
 			);
 			path = RxSwiftColor;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA251BB920674D3400C7F5EA /* Build configuration list for PBXNativeTarget "RxSwiftColor" */;
 			buildPhases = (
+				CB1796AC04D32BA8FF2B609B /* [CP] Check Pods Manifest.lock */,
 				DA251BA320674D3400C7F5EA /* Sources */,
 				DA251BA420674D3400C7F5EA /* Frameworks */,
 				DA251BA520674D3400C7F5EA /* Resources */,
+				59BF810CB7FC9F9F37000839 /* [CP] Embed Pods Frameworks */,
+				A3F9504BF937BE1D84E43EE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +161,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59BF810CB7FC9F9F37000839 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftColor/Pods-RxSwiftColor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftColor/Pods-RxSwiftColor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F9504BF937BE1D84E43EE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftColor/Pods-RxSwiftColor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB1796AC04D32BA8FF2B609B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftColor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA251BA320674D3400C7F5EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA251BAD20674D3400C7F5EA /* ViewController.swift in Sources */,
+				DA251BAD20674D3400C7F5EA /* ColorViewController.swift in Sources */,
 				DA251BAB20674D3400C7F5EA /* AppDelegate.swift in Sources */,
+				DA251BBD20674DA500C7F5EA /* SelectedColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +365,7 @@
 		};
 		DA251BBA20674D3400C7F5EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C37768B5031F11D19574880 /* Pods-RxSwiftColor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +381,7 @@
 		};
 		DA251BBB20674D3400C7F5EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732C5E07A0BD34EF522E47D1 /* Pods-RxSwiftColor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
